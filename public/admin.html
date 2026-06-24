@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administração &mdash; Poções e Soluções</title>
+    <meta name="description" content="Painel de administração da loja Poções e Soluções: cadastrar, listar e remover poções." />
+    <meta name="theme-color" content="#15110d" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/brasao.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- ------------------------------ Cabecalho ------------------------------ -->
+    <header class="topo">
+      <div class="container topo__interno">
+        <a class="marca" href="/" aria-label="Página inicial Poções e Soluções">
+          <img class="marca__brasao" src="/images/brasao.png" alt="Brasão da loja Poções e Soluções" />
+          <span>
+            <span class="marca__nome">Poções &amp; Soluções</span><br />
+            <span class="marca__sub">Painel de Administração</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Navegação">
+          <a href="/">Ver a loja</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="admin-cabecalho">
+        <h1>Administração da loja</h1>
+        <p>Cadastre, liste e remova as poções vendidas na Poções &amp; Soluções.</p>
+      </div>
+
+      <div class="admin-grade">
+        <!-- ---------------------- Formulario de cadastro ---------------------- -->
+        <section class="painel painel--colado" aria-labelledby="titulo-cadastro">
+          <h2 id="titulo-cadastro">Cadastrar poção</h2>
+          <form id="form-pocao" novalidate>
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex.: Poção da Coragem" required />
+            </div>
+            <div class="campo">
+              <label for="descricao">Descrição</label>
+              <textarea id="descricao" name="descricao" rows="3" placeholder="O que essa poção faz?" required></textarea>
+            </div>
+            <div class="campo">
+              <label for="imagem">Imagem (URL ou caminho)</label>
+              <input type="text" id="imagem" name="imagem" placeholder="https://exemplo.com/minha-pocao.png" required />
+              <small>Informe a URL ou o caminho da imagem da poção.</small>
+            </div>
+            <div class="campo">
+              <label for="preco">Preço (moedas)</label>
+              <input type="number" id="preco" name="preco" min="0" step="1" placeholder="300" required />
+            </div>
+            <button type="submit" class="botao botao--ouro botao--bloco" id="botao-salvar">
+              Cadastrar poção
+            </button>
+          </form>
+        </section>
+
+        <!-- ------------------------- Lista de pocoes -------------------------- -->
+        <section class="painel" aria-labelledby="titulo-lista">
+          <h2 id="titulo-lista">Poções cadastradas (<span id="contador">0</span>)</h2>
+          <div class="tabela-pocoes" id="tabela-pocoes" aria-live="polite">
+            <p class="aviso" id="estado-lista">Carregando poções...</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="/js/admin.js"></script>
+  </body>
+</html>

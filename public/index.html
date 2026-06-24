@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poções e Soluções &mdash; Loja de Poções de Annabelle Merigold</title>
+    <meta
+      name="description"
+      content="Poções e Soluções, a loja de poções de Annabelle Merigold no Beco da Última Saída. Poções mágicas de todos os tipos desde 1867."
+    />
+    <meta name="theme-color" content="#15110d" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/brasao.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- ------------------------------ Cabecalho ------------------------------ -->
+    <header class="topo">
+      <div class="container topo__interno">
+        <a class="marca" href="#inicio" aria-label="Página inicial Poções e Soluções">
+          <img class="marca__brasao" src="/images/brasao.png" alt="Brasão da loja Poções e Soluções" />
+          <span>
+            <span class="marca__nome">Poções &amp; Soluções</span><br />
+            <span class="marca__sub">Beco da Última Saída</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#sobre">A Loja</a>
+          <a href="#produtos">Poções</a>
+          <a href="#historia">História</a>
+          <a href="#contato">Contato</a>
+          <a class="nav__admin" href="/admin.html">Administração</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- -------------------------------- Hero -------------------------------- -->
+      <section class="hero">
+        <div class="hero__conteudo">
+          <span class="hero__selo">Magia autêntica desde 1867</span>
+          <h1>Poções &amp; Soluções</h1>
+          <p>
+            A mais lendária loja de poções do Beco da Última Saída. Inspiração, beleza,
+            verdade e um toque de perigo &mdash; tudo engarrafado à mão por Annabelle Merigold.
+          </p>
+          <a class="botao botao--ouro" href="#produtos">Ver as poções</a>
+        </div>
+      </section>
+
+      <!-- ----------------------------- Sobre a loja --------------------------- -->
+      <section class="secao" id="sobre">
+        <div class="container">
+          <h2 class="secao__titulo">Bem-vindo à nossa loja</h2>
+          <div class="ornamento" aria-hidden="true"></div>
+          <div class="sobre">
+            <div class="sobre__texto">
+              <p>
+                Escondida entre as pedras tortas do <strong>Beco da Última Saída</strong>,
+                a <strong>Poções &amp; Soluções</strong> é o refúgio de bruxos, viajantes e
+                curiosos em busca de um pouco de magia engarrafada.
+              </p>
+              <p>
+                Cada frasco é preparado à mão por Annabelle Merigold, usando receitas
+                guardadas a sete chaves e ingredientes colhidos sob a luz da lua. Da
+                inspiração instantânea a verdades reveladas, há uma poção para cada desejo.
+              </p>
+              <ul class="lista-destaques">
+                <li>Receitas artesanais transmitidas por gerações</li>
+                <li>Ingredientes raros colhidos sob a lua cheia</li>
+                <li>Cada poção testada (quase sempre) com segurança</li>
+              </ul>
+            </div>
+            <div class="sobre__imagem">
+              <img
+                src="/images/annabelle.png"
+                alt="Annabelle Merigold, a feiticeira dona da loja, segurando uma poção luminosa"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------ Produtos ------------------------------ -->
+      <section class="secao secao--alt" id="produtos">
+        <div class="container">
+          <h2 class="secao__titulo">Poções disponíveis</h2>
+          <p class="secao__intro">
+            Escolha entre nossas poções mais cobiçadas. Todas prontas para envio
+            por coruja ou retirada na loja.
+          </p>
+          <div class="grade-pocoes" id="grade-pocoes" aria-live="polite">
+            <p class="aviso" id="estado-pocoes">Invocando as poções do caldeirão...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------ Historia ------------------------------ -->
+      <section class="secao" id="historia">
+        <div class="container">
+          <h2 class="secao__titulo">Nossa história</h2>
+          <div class="ornamento" aria-hidden="true"></div>
+          <div class="historia">
+            <div class="historia__imagem">
+              <img
+                src="/images/historia-1867.png"
+                alt="A fundação da loja de poções em 1867, uma feiticeira acendendo velas na loja antiga"
+              />
+            </div>
+            <div class="historia__texto">
+              <span class="historia__ano">1867</span>
+              <p>
+                Tudo começou quando a bisavó de Annabelle abriu uma pequena banca de
+                ervas no Beco da Última Saída. O que era um modesto balcão de chá logo
+                se tornou ponto de encontro de feiticeiros de todo o reino.
+              </p>
+              <ul class="linha-tempo">
+                <li><strong>1867</strong> &middot; Fundação da loja de ervas e chá.</li>
+                <li><strong>1901</strong> &middot; A primeira poção de inspiração é engarrafada.</li>
+                <li><strong>1985</strong> &middot; A loja vira patrimônio mágico do Beco.</li>
+                <li><strong>Hoje</strong> &middot; Annabelle leva a magia até a sua porta.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ------------------------------- Rodape ------------------------------- -->
+    <footer class="rodape" id="contato">
+      <div class="container">
+        <div class="rodape__grade">
+          <div>
+            <h3>Poções &amp; Soluções</h3>
+            <p>
+              A loja de poções de Annabelle Merigold. Magia engarrafada à mão,
+              com carinho e um pouco de ousadia, desde 1867.
+            </p>
+          </div>
+          <div>
+            <h3>Contato</h3>
+            <ul class="rodape__contato">
+              <li><strong>Endereço:</strong>&nbsp;Beco da Última Saída, nº 13</li>
+              <li><strong>Coruja:</strong>&nbsp;coruja@pocoesesolucoes.com</li>
+              <li><strong>Telefone:</strong>&nbsp;(11) 1867-0000</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Horário</h3>
+            <ul>
+              <li>Segunda a Sexta: 9h às 18h</li>
+              <li>Sábado: 10h às 14h</li>
+              <li>Domingo e luas cheias: fechado</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rodape__base">
+          <p>&copy; 1867&ndash;<span id="ano"></span> Poções &amp; Soluções &middot; Todos os feitiços reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="/js/store.js"></script>
+  </body>
+</html>

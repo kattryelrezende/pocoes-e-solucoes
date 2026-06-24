@@ -1,0 +1,22 @@
+{
+  "name": "pocoes-e-solucoes",
+  "version": "1.0.0",
+  "description": "Web Service e site de vendas da loja de pocoes Pocoes e Solucoes (Annabelle Merigold) - SCC0219 Atividade Pratica 2",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^5.1.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sqlite3"
+    ]
+  }
+}
